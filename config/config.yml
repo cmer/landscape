@@ -1,0 +1,46 @@
+# Create your own styles, just add your CSS files to public/stylesheets or 
+# if you prefer SASS, in public/stylesheets/sass.
+:style: :default
+:size:  :big
+
+# Set to true if you want the link to the original page to contain your username and password
+# eg: http://user:pass@http://domain.com
+:links_contain_credentials: true
+
+# Refresh rate of the Landscape page. Set to -1 to disable auto-refresh.
+:refresh_rate: 600
+
+# The default HTTP timeout. Can also be set on a per-server basis.
+:http_timeout: 10
+
+# The servers to monitor
+#
+# Supported options per server:
+#   - :type         The parser type (required)
+#   - :url          The url to monitor/parse (optional, but required if not specified in the parser)
+#   - :label        A custom description (optional)
+#   - :username     Username used for HTTP authentication (optional)
+#   - :password     Password used for HTTP authentication (optional)
+#   - :http_timeout The HTTP timeout for this particular server (optional)
+#   - :http_verb    The HTTP verb to use. Possible values: :get, :post, :put, :delete (optional, defaults to :get)
+#   - :post_data    If the HTTP verb is :post, you can supply data to be posted. Format is: "key1=value1&key2=value2"
+:servers:
+  - :type: :monit
+    :url: http://domain.com:2812
+    :label: Load Balancer
+    :username: admin
+    :password: password
+  
+  - :type: :aws
+  - :type: :twitter
+
+  - :type: :http
+    :label: Google
+    :url: http://www.google.com/search?hl=en&q=Ruby+is+king&btnG=Google+Search&meta=&aq=f&oq=
+
+  - :type: :http
+    :label: Yahoo
+    :url: http://search.yahoo.com/search
+    :http_verb: :post
+    :post_data: p=ruby+is+king&fr=yfp-t-501&type=&toggle=1&cop=&ei=UTF-8
+    

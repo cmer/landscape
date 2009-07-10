@@ -1,0 +1,33 @@
+== Welcome to Landscape
+
+Landscape is a very simple monitoring software that helps you visualize the
+health of servers or external services on a single web page.
+
+The initial goal was to be able to monitor multiple Monit instances on a single
+screen. However, a few additional "Parsers" are included to monitor different 
+types of servers or services, such as: HTTP, Amazon Web Services & Twitter. You
+are encouraged to create your own Parsers if the included parsers don't fit your
+needs.
+
+== Getting Started
+
+1. Make sure you have Rails 2.3.2 installed.
+2. Run <tt>rake gems:install</tt> to install dependencies.
+3. Configure config/config.yml. Examples are included.
+4. Run <tt>script/server</tt> to start your Ruby server.
+
+To use this in real world (TM), you'll probably want to deploy Landscape with
+Passenger or Mongrel/Thin behind a reverse proxy such as Nginx.
+
+== Creating your own Parser
+
+Creating your own parser couldn't be easy. See the included parsers in ./parsers.
+
+Only the 'status' method is mandatory and should return one of the following 
+symbols: :ok, :error, :exception, :monitoring_error.
+
+The 'url' and 'label' methods are optional. They are overridden by the corresponding
+options in config.yml.
+
+If you want to provide the user with additional details concerning the health
+of a server or service, simply set the @details instance variable.

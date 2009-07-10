@@ -1,0 +1,25 @@
+body {
+  background-color: #dfdfdf;
+  font-family: Helvetica, Arial, Sans-Serif; }
+
+a {
+  text-decoration: none; }
+
+div#statuses .server {
+  color: white; }
+div#statuses .server.ok {
+  background-color: green; }
+div#statuses .server.error {
+  background-color: red; }
+div#statuses .server.warning {
+  background-color: #ff6600; }
+div#statuses .server.exception {
+  background-color: black; }
+div#statuses .details {
+  font-size: 60%;
+  margin-top: 2px; }
+
+#kudos {
+  margin-top: 10px;
+  font-size: 8pt;
+  color: #555555; }

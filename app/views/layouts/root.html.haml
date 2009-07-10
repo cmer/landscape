@@ -1,0 +1,12 @@
+!!! XML
+!!!
+%html
+  %head
+    = stylesheet_link_tag "/stylesheets/#{@config[:style] || "default"}.css", :media => 'all'
+    = stylesheet_link_tag "/stylesheets/#{@config[:style] || "default"}-#{@config[:size] || "big"}.css", :media => 'all'
+
+    - if @config[:refresh_rate] && @config[:refresh_rate] > 0
+      %meta(content="#{@config[:refresh_rate]}" http-equiv="refresh")
+
+  %body
+    =yield
