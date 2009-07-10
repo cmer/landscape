@@ -9,6 +9,11 @@ types of servers or services, such as: HTTP, Amazon Web Services & Twitter. You
 are encouraged to create your own Parsers if the included parsers don't fit your
 needs.
 
+== Live Example
+
+You can see a very simple of what Landscape looks like at
+http://landscape.carlmercier.com/
+
 == Getting Started
 
 1. Make sure you have Rails 2.3.2 installed.
