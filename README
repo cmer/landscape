@@ -12,7 +12,8 @@ needs.
 == Getting Started
 
 1. Make sure you have Rails 2.3.2 installed.
-2. Run <tt>rake gems:install</tt> to install dependencies.
+2. Run <tt>rake gems:install</tt> to install dependencies. On Ubuntu, you'll
+   need to run <tt>apt-get install libcurl-openssl-dev</tt> first.
 3. Configure config/config.yml. Examples are included.
 4. Run <tt>script/server</tt> to start your Ruby server.
 
