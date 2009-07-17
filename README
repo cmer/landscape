@@ -27,7 +27,7 @@ Passenger or Mongrel/Thin behind a reverse proxy such as Nginx.
 
 == Creating your own Parser
 
-Creating your own parser couldn't be easy. See the included parsers in ./parsers.
+Creating your own parser couldn't be easier. See the included parsers in ./parsers.
 
 Only the 'status' method is mandatory and should return one of the following 
 symbols: :ok, :error, :exception, :monitoring_error.
