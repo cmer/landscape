@@ -5,9 +5,9 @@ health of servers or external services on a single web page.
 
 The initial goal was to be able to monitor multiple Monit instances on a single
 screen. However, a few additional "Parsers" are included to monitor different 
-types of servers or services, such as: HTTP, Amazon Web Services & Twitter. You
-are encouraged to create your own Parsers if the included parsers don't fit your
-needs.
+types of servers or services, such as: HTTP, Amazon Web Services, HAProxy and
+Twitter. You are encouraged to create your own Parsers if the included parsers
+don't fit your needs.
 
 == Live Example
 
