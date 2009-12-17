@@ -15,3 +15,7 @@
     = APP_VERSION
   at
   = Time.now
+
+:javascript
+  var errorCount = #{@error_count};
+  if(window.fluid) { window.fluid.dockBadge=(errorCount > 0) ? errorCount.toString() : ""; }
