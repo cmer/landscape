@@ -4,3 +4,6 @@ body {
 div#statuses .server {
   padding: 10px;
   margin: 1px; }
+div#statuses .header {
+  padding: 25px 10px 5px 10px;
+  margin: 1px; }

@@ -1,7 +1,7 @@
 # Create your own styles, just add your CSS files to public/stylesheets or 
 # if you prefer SASS, in public/stylesheets/sass.
 :style: :default
-:size:  :big
+:size:  :tiny
 
 # Set to true if you want the link to the original page to contain your username and password
 # eg: http://user:pass@http://domain.com
@@ -31,9 +31,13 @@
     :username: admin
     :password: password
   
+  - :divider: 7px
+
   - :type: :aws
   - :type: :twitter
 
+  - :header: Search Engines
+  
   - :type: :http
     :label: Google
     :url: http://www.google.com/search?hl=en&q=Ruby+is+king&btnG=Google+Search&meta=&aq=f&oq=

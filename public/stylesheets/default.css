@@ -18,6 +18,8 @@ div#statuses .server.exception {
 div#statuses .details {
   font-size: 60%;
   margin-top: 2px; }
+div#statuses .divider {
+  height: 10px; }
 
 #kudos {
   margin-top: 10px;

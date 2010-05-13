@@ -5,11 +5,8 @@
 # Make sure the secret is at least 30 characters and all random, 
 # no regular words or you'll be exposed to dictionary attacks.
 ActionController::Base.session = {
-  :key         => '_server_status_session',
+  :key         => '_landscape_session',
   :secret      => '2cdcddd0c5f739d315e1d80702ae5893e9cfac2aaa1fe5e0d83737c653384c33ff95bd890f347420ee9c32b91050b1e34906b6fa1169a82d0f5df53afe5cbbfd'
 }
 
-# Use the database for sessions instead of the cookie-based default,
-# which shouldn't be used to store highly confidential information
-# (create the session table with "rake db:sessions:create")
 # ActionController::Base.session_store = :active_record_store

@@ -9,21 +9,25 @@ types of servers or services, such as: HTTP, Amazon Web Services, HAProxy and
 Twitter. You are encouraged to create your own Parsers if the included parsers
 don't fit your needs.
 
-== Live Example
-
-You can see a very simple of what Landscape looks like at
-http://landscape.carlmercier.com/
-
 == Getting Started
 
-1. Make sure you have Rails 2.3.2 installed.
+1. Make sure you have Rails 2.3.5 installed.
 2. Run <tt>rake gems:install</tt> to install dependencies. On Ubuntu, you'll
    need to run <tt>apt-get install libcurl-openssl-dev</tt> first.
 3. Configure config/config.yml. Examples are included.
 4. Run <tt>script/server</tt> to start your Ruby server.
 
-To use this in real world (TM), you'll probably want to deploy Landscape with
+To use this in real world (TM), you'll probably want to deploy Landscape on
 Passenger or Mongrel/Thin behind a reverse proxy such as Nginx.
+
+== Getting more out of Landscape on OSX
+
+If you're on Mac OS X, you'll be happy to know that Landscape supports Growl
+notifications. It can also show how many services or servers are not healthy as
+a dock icon badge.
+
+To unlock these features, you must encapsulate Landscape in a Fluid container.
+Download Fluid at http://fluidapp.com.
 
 == Creating your own Parser
 
@@ -37,3 +41,7 @@ options in config.yml.
 
 If you want to provide the user with additional details concerning the health
 of a server or service, simply set the @details instance variable.
+
+== Thanks
+
+Fluid & Growl icons taken from http://www.flickr.com/photos/vinthomas/4152920543/
